@@ -3,7 +3,7 @@ plugins {
     application
 }
 
-group = "com.example"
+group = "com.example.netty"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -20,6 +20,9 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
 }
 
 kotlin {
@@ -27,5 +30,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("com.example.netty.MainKt")
 }
