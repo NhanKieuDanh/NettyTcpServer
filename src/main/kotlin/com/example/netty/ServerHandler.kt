@@ -1,3 +1,5 @@
+package com.example.netty
+
 import io.netty.channel.ChannelHandlerContext
 import io.netty.channel.SimpleChannelInboundHandler
 import io.netty.channel.EventLoop
